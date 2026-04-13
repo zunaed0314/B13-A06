@@ -19,6 +19,15 @@ const BuyCards = ({ addCard, removeFromCart, dataPromise, getCard }) => {
         }
     }
 
+    const handleRemoveFromCart = (productId) => {
+        const updatedCards = allCards.filter(item => item.id !== productId);
+        setAllCards(updatedCards);     
+        removeFromCart(productId);
+        updateCardCount(cardCount - 1);
+    }
+
+    
+
     const data = use(dataPromise);
 
     return (
@@ -32,8 +41,8 @@ const BuyCards = ({ addCard, removeFromCart, dataPromise, getCard }) => {
                     to boost your productivity and creativity.
                 </p>
                 <div className='flex gap-2 p-2 rounded-full bg-purple-200'>
-                    <button className='btn rounded-full bg-purple-600' onClick={() => cardStatus(true)}>Products</button>
-                    <button className='btn text-black rounded-full bg-transparent' onClick={() => cardStatus(false)}>Cart({cardCount})</button>
+                    <button className={`btn text-black rounded-full ${showProducts ? 'bg-purple-600' : 'bg-transparent'} `} onClick={() => cardStatus(true)}>Products</button>
+                    <button className={`btn text-black rounded-full ${showProducts ? 'bg-transparent' : 'bg-purple-600'} `} onClick={() => cardStatus(false)}>Cart({cardCount})</button>
                 </div>
 
                 <div className={`grid grid-cols-3 gap-5 w-380 ${showProducts ? 'block' : 'hidden'}`}>
@@ -53,7 +62,11 @@ const BuyCards = ({ addCard, removeFromCart, dataPromise, getCard }) => {
                     ) : (
                         <div className='grid grid-cols-1 gap-4 bg-gray-200 rounded-md p-10'>
                             {allCards.map(product => (
-                                <Cart key={product.id} product={product} removeFromCart={removeFromCart} />
+                                <Cart key={product.id} 
+                                product={product} 
+                                onRemove={handleRemoveFromCart}
+                                
+                                />
                             ))}
                         </div>
                     )}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { X } from 'lucide-react';
 
-const Cart = ({ product, removeFromCart }) => {
+const Cart = ({ product, onRemove }) => {
     return (
         <div className='flex items-center justify-between border-b border-gray-200 py-3 hover:bg-gray-300 p-5'>
             <div className='flex items-center gap-4'>
@@ -12,8 +12,8 @@ const Cart = ({ product, removeFromCart }) => {
                 </div>
             </div>
             <button 
-                onClick={() => removeFromCart(product.id)}
-                className='text-red-500 hover:text-red-700 font-semibold'
+                onClick={() => onRemove(product.id)}
+                className='btn bg-gray-300 text-red-500 hover:text-red-700 font-semibold'
             >
                 Remove
             </button>

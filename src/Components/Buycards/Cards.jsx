@@ -5,7 +5,7 @@ const Cards = ({ product, addCard, removeFromCart, updateCardCount }) => {
 
     const [buy, setBuy] = useState(false);
 
-    const handleBuy =(status) => {
+    const handleBuy = (status) => {
         setBuy(status);
         if(status){
             addCard(product);
@@ -30,9 +30,7 @@ const Cards = ({ product, addCard, removeFromCart, updateCardCount }) => {
                 }
             </ul>
             <button className={`btn rounded-full text-white duration-300 ${buy ? 'bg-green-400' : 'bg-purple-600'} border-none`} 
-                onClick={() => {handleBuy(!buy)
-
-            }}>
+                onClick={() => {handleBuy(!buy)}}>
                 {
                     buy ? <><Check /> Added to Cart</> : 'Buy Now'
                 }
