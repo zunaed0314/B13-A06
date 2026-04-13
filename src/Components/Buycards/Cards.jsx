@@ -1,14 +1,13 @@
 import { Check } from 'lucide-react';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Cards = ({ product, addCard, removeFromCart, updateCardCount, cartItems }) => {
-    const isProductInCart = cartItems.some(item => item.id === product.id);
-    const [buy, setBuy] = useState(isProductInCart);
+    const [buy, setBuy] = useState(false);
 
-   
-    if (isProductInCart !== buy) {
-        setBuy(isProductInCart);
-    }
+    useEffect(() => {
+        const isInCart = cartItems.some(item => item.id === product.id);
+        setBuy(isInCart);
+    }, [cartItems, product.id]);
 
     const handleBuy = (status) => {
         if (status) {
