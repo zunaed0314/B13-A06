@@ -2,7 +2,7 @@ import React, { use, useState } from 'react';
 import Cards from './Cards';
 import Cart from './Cart';
 
-const BuyCards = ({ addCard, removeFromCart, dataPromise, getCard }) => {
+const BuyCards = ({ addCard, removeFromCart, dataPromise, getCard, cartItems }) => {
     const [cardCount, setcardCount] = useState(0);
     const [showProducts, setShowProducts] = useState(true);
     const [allCards, setAllCards] = useState([]);
@@ -51,7 +51,8 @@ const BuyCards = ({ addCard, removeFromCart, dataPromise, getCard }) => {
                             product={product}
                             addCard={addCard}
                             removeFromCart={removeFromCart}
-                            updateCardCount={updateCardCount} />
+                            updateCardCount={updateCardCount}
+                            cartItems={cartItems} />
                     ))}
                 </div>
 

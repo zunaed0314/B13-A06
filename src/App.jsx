@@ -39,6 +39,7 @@ function App() {
       removeFromCart={removeFromCart}
       dataPromise={dataPromise} 
       getCard={getCard}
+      cartItems = {card}
       />
     </div>
   )

@@ -1,7 +1,7 @@
 import { Play } from 'lucide-react';
 import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'; // Add this import
+import 'react-toastify/dist/ReactToastify.css';
 
 const Hero = () => {
 
@@ -37,7 +37,7 @@ const Hero = () => {
                 <ToastContainer
                     progressStyle={{ 
                         background: "#22c55e",
-                        backgroundImage: "none"  // This removes the rainbow gradient
+                        backgroundImage: "none"  
                     }}
                 />
             </div>
