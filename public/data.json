@@ -12,7 +12,7 @@
       "Basic customization",
       "Export to PDF"
     ],
-    "icon": "Sparkles"
+    "icon": "https://i.ibb.co.com/GvQQMKvf/design-tool.png"
   },
   {
     "id": 2,
@@ -27,7 +27,7 @@
       "ATS optimization",
       "Priority support"
     ],
-    "icon": "Rocket"
+    "icon": "https://i.ibb.co.com/ZRh28gYT/operation.png"
   },
   {
     "id": 3,
@@ -42,7 +42,7 @@
       "Custom branding",
       "Analytics dashboard"
     ],
-    "icon": "Briefcase"
+    "icon": "https://i.ibb.co.com/qLhvXhmY/portfolio.png"
   },
   {
     "id": 4,
@@ -57,7 +57,7 @@
       "Dedicated manager",
       "Advanced integrations"
     ],
-    "icon": "Building"
+    "icon": "https://i.ibb.co.com/WNb8Bx9k/shopping-cart.png"
   },
   {
     "id": 5,
@@ -72,7 +72,7 @@
       "Resume feedback",
       "Export to PDF"
     ],
-    "icon": "GraduationCap"
+    "icon": "https://i.ibb.co.com/H9QTw0r/social-media.png"
   },
   {
     "id": 6,
@@ -87,6 +87,6 @@
       "Lifetime updates",
       "Priority support"
     ],
-    "icon": "Infinity"
+    "icon": "https://i.ibb.co.com/vyMWVVK/writing-2327400-1.png"
   }
 ]
