@@ -24,8 +24,8 @@ const Hero = () => {
                 </p>
                 <div className='relative flex gap-3'>
                     <button className="btn bg-purple-700 rounded-full text-xl px-4 py-7 hover:bg-white hover:text-black hover:border-2 hover:border-purple-700">Explore Products</button>
-                    <button className='btn rounded-full px-4 py-7 text-white font-semibold hover:bg-white hover:text-black text-xl'>
-                        <Play />
+                    <button className='btn rounded-full border-1 border-purple-900 px-4 py-7 bg-white text-purple-600 font-semibold hover:bg-white hover:text-black text-xl'>
+                        <Play color='purple' />
                         Watch Demo
                     </button>
                 </div>

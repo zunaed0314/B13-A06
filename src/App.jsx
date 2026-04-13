@@ -7,6 +7,7 @@ import BuyCards from './Components/Buycards/BuyCards'
 import Hero from './Components/Hero/Hero'
 import Nav from './Components/Navbar/Nav'
 import Users from './Components/Users/Users'
+import GS from './Components/Getstarted/GS'
 
 const dataPromise = fetch('data.json').then(res => res.json());
 
@@ -41,6 +42,8 @@ function App() {
       getCard={getCard}
       cartItems = {card}
       />
+
+      <GS dataPromise={dataPromise}></GS>
     </div>
   )
 }

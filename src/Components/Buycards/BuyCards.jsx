@@ -32,7 +32,7 @@ const BuyCards = ({ addCard, removeFromCart, dataPromise, getCard, cartItems }) 
 
     return (
         <div>
-            <div className='flex flex-col gap-4 justify-center items-center w-full px-30'>
+            <div className='flex flex-col gap-4 justify-center items-center w-full px-30 mt-15'>
                 <p className='text-6xl text-black font-bold text-center'>
                     Premium Digital Tools
                 </p>
@@ -40,9 +40,9 @@ const BuyCards = ({ addCard, removeFromCart, dataPromise, getCard, cartItems }) 
                     Choose from our curated collection of premium digital products designed
                     to boost your productivity and creativity.
                 </p>
-                <div className='flex gap-2 p-2 rounded-full bg-purple-200'>
-                    <button className={`btn text-black rounded-full ${showProducts ? 'bg-purple-600' : 'bg-transparent'} `} onClick={() => cardStatus(true)}>Products</button>
-                    <button className={`btn text-black rounded-full ${showProducts ? 'bg-transparent' : 'bg-purple-600'} `} onClick={() => cardStatus(false)}>Cart({cardCount})</button>
+                <div className='flex gap-2 p-2 rounded-full bg-gray-100 shadow-md'>
+                    <button className={`btn border-none shadow-sm text-black rounded-full text-xl px-10 py-5 ${showProducts ? 'bg-purple-600' : 'bg-white'} `} onClick={() => cardStatus(true)}>Products</button>
+                    <button className={`btn border-none shadow-sm text-black rounded-full text-xl px-10 py-5 ${showProducts ? 'bg-white' : 'bg-purple-600'} `} onClick={() => cardStatus(false)}>Cart({cardCount})</button>
                 </div>
 
                 <div className={`grid grid-cols-3 gap-5 w-380 ${showProducts ? 'block' : 'hidden'}`}>
@@ -56,12 +56,12 @@ const BuyCards = ({ addCard, removeFromCart, dataPromise, getCard, cartItems }) 
                     ))}
                 </div>
 
-                <div className={`p-6 w-full ${!showProducts ? 'block' : 'hidden'}`}>
+                <div className={`p-6 w-full bg-gray-300 rounded-md ${!showProducts ? 'block' : 'hidden'}`}>
                     <p className='text-2xl font-bold text-black mb-4'>Your Cart</p>
                     {allCards.length === 0 ? (
-                        <p className='text-gray-500 text-center py-10'>Your cart is empty</p>
+                        <p className='text-gray-500 text-center py-10 '>Your cart is empty</p>
                     ) : (
-                        <div className='grid grid-cols-1 gap-4 bg-gray-200 rounded-md p-10'>
+                        <div className='grid grid-cols-1 gap-4 bg-gray-200 rounded-md p-10 '>
                             {allCards.map(product => (
                                 <Cart key={product.id} 
                                 product={product} 

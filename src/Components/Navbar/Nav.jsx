@@ -19,10 +19,10 @@ const Nav = ({ cartCount }) => {
                         <li><a>FAQ</a></li>
                     </ul>
                 </div>
-                <p className='text-3xl font-bold text-purple-500'>DigiTools</p>
+                <p className='text-4xl font-bold text-purple-500'>DigiTools</p>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 text-gray-500 font-semibold">
+                <ul className="menu menu-horizontal px-1 text-gray-500 font-semibold text-xl">
                     <li><a>Features</a></li>
                     <li><a>Pricing</a></li>
                     <li><a>Testimonials</a></li>
@@ -41,8 +41,8 @@ const Nav = ({ cartCount }) => {
                         )}
                     </div>
 
-                    <p className='font-bold text-black'>Log In</p>
-                    <button className='bg-purple-600 text-white px-5 py-3 rounded-full font-bold cursor-pointer shadow'>Get Started</button>
+                    <p className='font-bold text-black text-xl'>Log In</p>
+                    <button className='bg-purple-600 text-white px-5 py-3 rounded-full font-bold cursor-pointer shadow text-xl'>Get Started</button>
                 </div>
             </div>
         </div>
