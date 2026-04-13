@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Plan",
+    "description": "Basic tools for individuals getting started.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "info",
+    "features": [
+      "10+ templates",
+      "Basic customization",
+      "Export to PDF"
+    ],
+    "icon": "Sparkles"
+  },
+  {
+    "id": 2,
+    "name": "Pro Plan",
+    "description": "Advanced features for professionals.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "success",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Priority support"
+    ],
+    "icon": "Rocket"
+  },
+  {
+    "id": 3,
+    "name": "Business Plan",
+    "description": "Perfect for teams and organizations.",
+    "price": 29.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "warning",
+    "features": [
+      "Team collaboration",
+      "Custom branding",
+      "Analytics dashboard"
+    ],
+    "icon": "Briefcase"
+  },
+  {
+    "id": 4,
+    "name": "Enterprise Plan",
+    "description": "Full-scale solution for large enterprises.",
+    "price": 99.99,
+    "period": "yearly",
+    "tag": "premium",
+    "tagType": "danger",
+    "features": [
+      "Unlimited templates",
+      "Dedicated manager",
+      "Advanced integrations"
+    ],
+    "icon": "Building"
+  },
+  {
+    "id": 5,
+    "name": "Student Plan",
+    "description": "Affordable option for students.",
+    "price": 4.99,
+    "period": "monthly",
+    "tag": "discount",
+    "tagType": "info",
+    "features": [
+      "50+ templates",
+      "Resume feedback",
+      "Export to PDF"
+    ],
+    "icon": "GraduationCap"
+  },
+  {
+    "id": 6,
+    "name": "Lifetime Plan",
+    "description": "Pay once and enjoy forever.",
+    "price": 199.99,
+    "period": "one-time",
+    "tag": "limited",
+    "tagType": "success",
+    "features": [
+      "All premium features",
+      "Lifetime updates",
+      "Priority support"
+    ],
+    "icon": "Infinity"
+  }
+]
