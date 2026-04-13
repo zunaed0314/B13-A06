@@ -1,7 +1,7 @@
 import { Check } from 'lucide-react';
 import React, { useState } from 'react';
 
-const Cards = ({ product, addCard, updateCardCount }) => {
+const Cards = ({ product, addCard, removeFromCart, updateCardCount }) => {
 
     const [buy, setBuy] = useState(false);
 
@@ -10,6 +10,10 @@ const Cards = ({ product, addCard, updateCardCount }) => {
         if(status){
             addCard(product);
             updateCardCount(prevCount => prevCount + 1);
+        }
+        else{
+            updateCardCount(prevCount => prevCount - 1);
+            removeFromCart(product.id);
         }
     }
 
@@ -25,8 +29,13 @@ const Cards = ({ product, addCard, updateCardCount }) => {
                     features.map((feature,index) => <li className='flex text-black' key={index}><Check color='green' className='mr-2'/> {feature}</li>)
                 }
             </ul>
-            <button className='btn rounded-full text-white bg-purple-600 border-none ' onClick={() => {handleBuy(!buy)}}>
-                
+            <button className={`btn rounded-full text-white duration-300 ${buy ? 'bg-green-400' : 'bg-purple-600'} border-none`} 
+                onClick={() => {handleBuy(!buy)
+
+            }}>
+                {
+                    buy ? <><Check /> Added to Cart</> : 'Buy Now'
+                }
             </button>
 
         </div>

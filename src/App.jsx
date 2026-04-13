@@ -12,28 +12,34 @@ const dataPromise = fetch('data.json').then(res => res.json());
 
 function App() {
 
-  
-
   const [card,setCard] = useState([])
 
   const addCard = (product) => {
     const newcard = [...card, product];
     setCard(newcard);
+    return newcard;
   }
 
-  //  const removeFromCart = (productId) => {
-  //   setCard(card.filter(item => item.id !== productId));
-  // };
 
-  
+  const getCard = () => {
+    return card;
+  }
+
+  const removeFromCart = (productId) => {
+    setCard(prevCard => prevCard.filter(item => item.id !== productId));
+  };  
 
   return (
     <div className='bg-white'>
-      <Nav count={card.length}></Nav>
+      <Nav cartCount={card.length}></Nav>
       <Hero></Hero>
       <Users></Users>
-      <BuyCards addCard={addCard} dataPromise={dataPromise} />
-
+      <BuyCards 
+      addCard={addCard} 
+      removeFromCart={removeFromCart}
+      dataPromise={dataPromise} 
+      getCard={getCard}
+      />
     </div>
   )
 }
