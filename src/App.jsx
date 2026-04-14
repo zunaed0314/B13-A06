@@ -8,6 +8,7 @@ import Hero from './Components/Hero/Hero'
 import Nav from './Components/Navbar/Nav'
 import Users from './Components/Users/Users'
 import GS from './Components/Getstarted/GS'
+import Pricing from './Components/Pricing/Pricing'
 
 const dataPromise = fetch('data.json').then(res => res.json());
 
@@ -44,6 +45,7 @@ function App() {
       />
 
       <GS dataPromise={dataPromise}></GS>
+      <Pricing></Pricing>
     </div>
   )
 }
