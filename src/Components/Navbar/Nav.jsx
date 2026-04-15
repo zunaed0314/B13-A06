@@ -33,7 +33,7 @@ const Nav = ({ cartCount }) => {
             </div>
             
             <div className="navbar-end">
-                <div className='flex gap-[5px] sm:gap-3 md:gap-2 justify-center items-center'>
+                <div className='flex gap-[5px] sm:gap-3 md:gap-5 lg:gap-8 justify-center items-center'>
                     <div className='relative flex items-center'>
                         <ShoppingCart color='black' className=' w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10' />
                         {cartCount > 0 && (

@@ -11,6 +11,8 @@ import GS from './Components/Getstarted/GS'
 import Pricing from './Components/Pricing/Pricing'
 import Ready from './Components/Ready/Ready'
 import Footer from './Components/Footer/Footer'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 const dataPromise = fetch('data.json').then(res => res.json());
 
@@ -55,6 +57,19 @@ function App() {
       <Pricing></Pricing>
       <Ready></Ready>
       <Footer></Footer>
+      
+      <ToastContainer 
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </div>
   )
 }
