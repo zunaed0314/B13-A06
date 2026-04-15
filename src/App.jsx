@@ -29,6 +29,10 @@ function App() {
     return card;
   }
 
+  const clearCart = () => {
+    setCard([]);
+  }
+
   const removeFromCart = (productId) => {
     setCard(prevCard => prevCard.filter(item => item.id !== productId));
   };  
@@ -44,6 +48,7 @@ function App() {
       dataPromise={dataPromise} 
       getCard={getCard}
       cartItems = {card}
+      clearCart = {clearCart}
       />
 
       <GS dataPromise={dataPromise}></GS>

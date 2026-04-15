@@ -3,7 +3,7 @@ import { X } from 'lucide-react';
 
 const Cart = ({ product, onRemove }) => {
     return (
-        <div className='flex flex-col sm:flex-row items-center justify-between border-b border-gray-200 py-3 hover:bg-gray-300 p-3 sm:p-5 rounded-md gap-3 sm:gap-0'>
+        <div className='flex sm:flex-row items-center justify-between border-b py-3 bg-gray-100 hover:bg-gray-200 p-3 sm:p-5 rounded-md gap-3 sm:gap-0'>
             <div className='flex items-center gap-3 sm:gap-4 w-full sm:w-auto'>
                 <img src={product.icon} alt={product.name} className='w-10 h-10 sm:w-12 sm:h-12' />
                 <div className='flex flex-col'>
@@ -13,7 +13,7 @@ const Cart = ({ product, onRemove }) => {
             </div>
             <button 
                 onClick={() => onRemove(product.id)}
-                className='btn bg-gray-300 text-red-500 hover:text-red-700 font-semibold px-3 py-1 sm:px-4 sm:py-2 text-sm sm:text-base w-full sm:w-auto'
+                className='btn bg-gray-300 text-red-500 hover:text-red-700 font-semibold px-3 py-1 sm:px-4 sm:py-2 text-sm sm:text-base sm:w-auto'
             >
                 Remove
             </button>

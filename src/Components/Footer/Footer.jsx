@@ -4,7 +4,7 @@ import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
 const Footer = () => {
     return (
         <footer className="bg-[#0B1220] text-gray-300 px-4 sm:px-6 md:px-8 py-8 sm:py-10 md:py-12">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6 sm:gap-8">
+            <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 gap-6 sm:gap-8">
                 <div className="sm:col-span-2">
                     <h2 className="text-white text-xl sm:text-2xl font-semibold mb-2">DigiTools</h2>
                     <p className="text-sm sm:text-base text-gray-400">
@@ -39,7 +39,7 @@ const Footer = () => {
                         <li className="cursor-pointer hover:text-white">Documentation</li>
                         <li className="cursor-pointer hover:text-white">Help Center</li>
                         <li className="cursor-pointer hover:text-white">Community</li>
-                        <li className="cursor-pointer hover:text-white">Contact</li>
+                        <li className="cursor-pointer hover:text-white font-bold">Contact</li>
                     </ul>
 
                     <div className="flex space-x-3 mt-4">

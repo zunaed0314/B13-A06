@@ -24,7 +24,7 @@ const Cards = ({ product, addCard, removeFromCart, updateCardCount, cartItems })
     const features = product.features;
     
     return (
-        <div className='flex flex-col gap-3 sm:gap-4 p-4 sm:p-5 rounded-md shadow-lg border-2 border-gray-100 bg-white relative'>
+        <div className='flex flex-col gap-3 sm:gap-4 p-4 sm:p-5 rounded-md shadow-lg border-2 border-gray-100 bg-white relative transition duration:1000 hover:-translate-y-1'>
             <img src={product.icon} alt={product.name} className='w-6 h-6 sm:w-8 sm:h-8' />
             <p className='text-xl sm:text-2xl text-black font-bold'>{product.name}</p>
             <p className='text-sm sm:text-base text-gray-600'>{product.description}</p>
@@ -46,7 +46,7 @@ const Cards = ({ product, addCard, removeFromCart, updateCardCount, cartItems })
                 ))}
             </ul>
             <button 
-                className={`btn rounded-full mx-auto sm:mx-15 py-2 sm:py-3 md:py-5 px-4 sm:px-6 w-full sm:w-auto text-white duration-300 ${buy ? 'bg-green-400' : 'bg-purple-600'} border-none cursor-pointer text-sm sm:text-base`} 
+                className={`btn mx-15  rounded-full mt-auto py-2 sm:py-3 md:py-5 px-4 sm:px-6 text-white duration-300 ${buy ? 'bg-green-400' : 'bg-purple-600'} border-none cursor-pointer text-sm sm:text-base`} 
                 onClick={() => handleBuy(!buy)}
             >
                 {buy ? <><Check className='w-4 h-4' /> Added to Cart</> : 'Buy Now'}
