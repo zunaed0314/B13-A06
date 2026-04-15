@@ -3,12 +3,12 @@ import React from 'react';
 
 const Pricing = () => {
     return (
-        <div className='flex flex-col gap-5 justify-center items-center my-8 sm:my-10 md:my-15 px-4 sm:px-6 md:px-8 lg:px-16'>
+        <div className=' px-9 sm:px-13 md:px-17 lg:px-31 flex flex-col gap-10 justify-center items-center my-8 sm:my-10 md:my-15'>
             <p className='text-2xl sm:text-3xl md:text-4xl text-gray-800 font-bold text-center'>Simple, Transparent Pricing</p>
             <p className='text-base sm:text-lg md:text-xl text-gray-600 text-center'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full relative'>
                 
-                <div className='p-4 sm:p-6 flex flex-col gap-4 rounded-md shadow-md bg-gray-100 transition duration:1000 hover:-translate-y-1'>
+                <div className='p-4 sm:p-6 flex flex-col gap-4 rounded-xl shadow-md bg-gray-100 transition duration:1000 hover:-translate-y-1'>
                     <p className='text-3xl sm:text-4xl text-gray-900 font-bold'>Starter</p>
                     <p className='text-base sm:text-xl text-gray-500'>
                         Perfect for getting started
@@ -23,7 +23,7 @@ const Pricing = () => {
                     <button className='btn mt-auto rounded-full bg-purple-600 text-white sm:py-3 md:py-5 lg:py-6'>Get Started for Free</button>
                 </div>
                 
-                <div className='p-4 sm:p-6 flex flex-col gap-4 rounded-md shadow-md relative bg-purple-500 transition duration:1000 hover:-translate-y-1'>
+                <div className='p-4 sm:p-6 flex flex-col gap-4 rounded-xl shadow-md relative bg-purple-500 transition duration:1000 hover:-translate-y-1 scale-102'>
                     <p className='text-3xl sm:text-4xl text-white font-bold'>Pro</p>
                     <p className='text-base sm:text-xl text-white'>
                         Best for professionals
@@ -38,10 +38,10 @@ const Pricing = () => {
                         <li className='flex text-sm sm:text-base'> <Check color='white' className='mr-2 flex-shrink-0'/> Advanced analytics</li>
                     </ul>
                     <button className='btn mt-auto rounded-full bg-white text-purple-600 py-2 sm:py-3 md:py-5 lg:py-6'>Start Pro Trial</button>
-                    <p className='absolute -top-3 left-1/2 -translate-x-1/2 px-2 sm:px-3 py-1 text-yellow-600 bg-yellow-200 rounded-full font-medium border-2 border-black text-xs sm:text-sm'>Most Popular</p>
+                    <p className='absolute -top-3 left-1/2 -translate-x-1/2 px-2 sm:px-4 py-1 text-yellow-700 bg-yellow-200 rounded-full font-bold border-2 border-black text-md'>Most Popular</p>
                 </div>
                 
-                <div className='p-4 sm:p-6 flex flex-col gap-4 rounded-md shadow-md bg-gray-100 transition duration:1000 hover:-translate-y-1'>
+                <div className='p-4 sm:p-6 flex flex-col gap-4 rounded-xl shadow-md bg-gray-100 transition duration:1000 hover:-translate-y-1'>
                     <p className='text-3xl sm:text-4xl text-gray-900 font-bold'>Enterprise</p>
                     <p className='text-base sm:text-xl text-gray-500'>
                         For teams and business

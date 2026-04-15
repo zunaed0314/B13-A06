@@ -7,7 +7,7 @@ const Hero = () => {
 
     const notify = () => toast("WOW SO EASY!")
     return (
-        <div className='grid grid-cols-1 lg:grid-cols-2 px-4 sm:px-6 md:px-8 lg:px-16 py-5 sm:py-8 md:py-10 lg:py-16 gap-5'>
+        <div className='px-9 sm:px-13 md:px-17 lg:px-31 grid grid-cols-1 lg:grid-cols-2 pt-30 lg:pt-35 pb-10 gap-5'>
             <div className='flex flex-col gap-4 justify-center items-center lg:items-start'>
                 <div className='bg-purple-200 gap-2 flex rounded-full px-3 py-1 w-fit'>
                     <img src="assets/group-5.png" className='w-5 h-5 sm:w-6 sm:h-6' alt="" />
@@ -22,7 +22,7 @@ const Hero = () => {
                     <button className="btn bg-purple-700 rounded-full text-sm sm:text-base md:text-lg lg:text-xl py-2 sm:py-3 md:py-4 hover:bg-white hover:text-black hover:border-2 hover:border-purple-700">
                         Explore Products
                     </button>
-                    <button className='btn rounded-full border-1 border-purple-900 py-2 sm:py-3  md:py-4 bg-white text-purple-600 font-semibold hover:bg-white hover:text-black text-sm sm:text-base md:text-lg lg:text-xl flex gap-2'>
+                    <button className='btn rounded-full border border-purple-900 py-2 sm:py-3  md:py-4 bg-white text-purple-600 font-semibold hover:bg-white hover:text-black text-sm sm:text-base md:text-lg lg:text-xl flex gap-2'>
                         <Play color='purple' className='w-4 h-4 sm:w-5 sm:h-5' />
                         Watch Demo
                     </button>

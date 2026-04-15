@@ -1,5 +1,7 @@
 import React from 'react';
 import { X } from 'lucide-react';
+import { toast } from 'react-toastify';
+
 
 const Cart = ({ product, onRemove }) => {
     return (
@@ -11,9 +13,15 @@ const Cart = ({ product, onRemove }) => {
                     <p className='text-gray-500 text-sm sm:text-base'>${product.price}</p>
                 </div>
             </div>
-            <button 
-                onClick={() => onRemove(product.id)}
-                className='btn bg-gray-300 text-red-500 hover:text-red-700 font-semibold px-3 py-1 sm:px-4 sm:py-2 text-sm sm:text-base sm:w-auto'
+            <button
+                onClick={() => {
+                    onRemove(product.id)
+                    toast.error(`${product.name} removed from cart!`,{
+                        autoClose:2500
+                    });
+                }
+                }
+                className='btn bg-gray-300 text-red-500 hover:text-red-700 font-medium text-sm sm:text-base sm:w-auto'
             >
                 Remove
             </button>

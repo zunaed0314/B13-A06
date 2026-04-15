@@ -19,7 +19,7 @@
     "name": "Pro Plan",
     "description": "Advanced features for professionals.",
     "price": 9.99,
-    "period": "monthly",
+    "period": "month",
     "tag": "popular",
     "tagType": "success",
     "features": [
@@ -34,7 +34,7 @@
     "name": "Business Plan",
     "description": "Perfect for teams and organizations.",
     "price": 29.99,
-    "period": "monthly",
+    "period": "month",
     "tag": "best seller",
     "tagType": "warning",
     "features": [
@@ -49,7 +49,7 @@
     "name": "Enterprise Plan",
     "description": "Full-scale solution for large enterprises.",
     "price": 99.99,
-    "period": "yearly",
+    "period": "year",
     "tag": "premium",
     "tagType": "danger",
     "features": [
@@ -64,7 +64,7 @@
     "name": "Student Plan",
     "description": "Affordable option for students.",
     "price": 4.99,
-    "period": "monthly",
+    "period": "month",
     "tag": "discount",
     "tagType": "info",
     "features": [

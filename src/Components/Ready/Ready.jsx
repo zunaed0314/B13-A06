@@ -3,7 +3,7 @@ import React from 'react';
 const Ready = () => {
     return (
         <div className='flex flex-col py-16 sm:py-20 md:py-30 bg-purple-600 justify-center items-center gap-4 px-4 sm:px-6 md:px-8'>
-            <p className='text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center'>Ready To Transform Your Workflow</p>
+            <p className='text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center'>Ready To Transform Your Workflow?</p>
             <p className='text-sm sm:text-base md:text-lg text-white text-center max-w-2xl'>
                 Join thousands of professionals who are already using Digitools to work smarter.
                 Start your free trial today.

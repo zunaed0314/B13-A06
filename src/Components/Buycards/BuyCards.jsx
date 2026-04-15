@@ -1,14 +1,17 @@
 import React, { use, useState } from 'react';
 import Cards from './Cards';
 import Cart from './Cart';
+import { ShoppingCart } from 'lucide-react';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const BuyCards = ({ addCard, removeFromCart, dataPromise, getCard, cartItems, clearCart }) => {
-    const [cardCount, setcardCount] = useState(0);
+    const [cartCount, setcartCount] = useState(0);
     const [showProducts, setShowProducts] = useState(true);
     const [allCards, setAllCards] = useState([]);
 
     const updateCardCount = (count) => {
-        setcardCount(count);
+        setcartCount(count);
     }
 
     const cardStatus = (status) => {
@@ -23,7 +26,7 @@ const BuyCards = ({ addCard, removeFromCart, dataPromise, getCard, cartItems, cl
         const updatedCards = allCards.filter(item => item.id !== productId);
         setAllCards(updatedCards);
         removeFromCart(productId);
-        updateCardCount(cardCount - 1);
+        updateCardCount(cartCount - 1);
     }
 
     const total = allCards.reduce((sum, product) => sum + product.price, 0);
@@ -32,7 +35,7 @@ const BuyCards = ({ addCard, removeFromCart, dataPromise, getCard, cartItems, cl
 
     return (
         <div>
-            <div className='flex flex-col gap-4 justify-center items-center w-full px-4 sm:px-6 md:px-8 lg:px-16 py-5 sm:py-8 md:py-10 lg:py-16 mt-8 sm:mt-10 md:mt-15'>
+            <div className=' px-9 sm:px-13 md:px-17 lg:px-31 flex flex-col gap-4 justify-center items-center w-full  py-5 sm:py-8 md:py-10 lg:py-16 mt-8 sm:mt-10 md:mt-15'>
                 <p className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-black font-bold text-center'>
                     Premium Digital Tools
                 </p>
@@ -45,14 +48,14 @@ const BuyCards = ({ addCard, removeFromCart, dataPromise, getCard, cartItems, cl
                         Products
                     </button>
                     <button className={`btn border-none shadow-sm text-black rounded-full text-sm sm:text-base md:text-lg lg:text-xl px-4 sm:px-6 md:px-8 lg:px-10 py-2 sm:py-3 md:py-4 lg:py-5 ${showProducts ? 'bg-white' : 'bg-purple-600 text-white'} `} onClick={() => cardStatus(false)}>
-                        Cart
-                        {
+                        Cart({cartCount})
+                        {/* {
                             cardCount > 0 ? (
                                 <span>({cardCount})</span>
                             ) : (
                                 <p></p>
                             )
-                        }
+                        } */}
                     </button>
                 </div>
 
@@ -70,7 +73,11 @@ const BuyCards = ({ addCard, removeFromCart, dataPromise, getCard, cartItems, cl
                 <div className={`p-4 sm:p-6 w-full bg-white shadow-md ring-3 rounded-md flex flex-col justify-center ${!showProducts ? 'block' : 'hidden'}`}>
                     <p className='text-xl sm:text-2xl font-bold text-black mb-4'>Your Cart</p>
                     {allCards.length === 0 ? (
-                        <p className='text-gray-500 text-center py-10'>Your cart is empty</p>
+                        <div className='flex flex-col justify-center items-center'>
+                            <ShoppingCart color='gray' className=' w-7 sm:w-10 md:w-20 h-7 sm:h-10 md:h-20 mx-auto' />
+                            <p className='text-gray-500 text-center text-xl py-10'>Your cart is empty</p>
+                        </div>
+
                     ) : (
                         <div className='grid grid-cols-1 gap-4 rounded-md'>
                             {allCards.map(product => (
@@ -92,10 +99,12 @@ const BuyCards = ({ addCard, removeFromCart, dataPromise, getCard, cartItems, cl
                     <button className='btn bg-purple-600 text-white rounded-full py-3 mt-2 hover:bg-purple-700' onClick={() => {
                         clearCart()
                         setAllCards([])
-                        setcardCount(0)
+                        setcartCount(0)
+                        toast.info("Cart cleared successfully!")
                     }}>Proceed To Checkout</button>
                 </div>
             </div>
+            
         </div>
     );
 };
