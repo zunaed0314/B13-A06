@@ -7,7 +7,7 @@ const Hero = () => {
 
     const notify = () => toast("WOW SO EASY!")
     return (
-        <div className='px-9 sm:px-13 md:px-17 lg:px-31 grid grid-cols-1 lg:grid-cols-2 pt-30 lg:pt-35 pb-10 gap-5'>
+        <div className='px-5 sm:px-13 md:px-17 lg:px-20 grid grid-cols-1 lg:grid-cols-2 pt-30 lg:pt-35 pb-10 gap-5'>
             <div className='flex flex-col gap-4 justify-center items-center lg:items-start'>
                 <div className='bg-purple-200 gap-2 flex rounded-full px-3 py-1 w-fit'>
                     <img src="assets/group-5.png" className='w-5 h-5 sm:w-6 sm:h-6' alt="" />
@@ -33,15 +33,9 @@ const Hero = () => {
                 <img 
                     src="assets/banner.png" 
                     alt="" 
-                    className=' object-cover' 
+                    className='object-cover' 
                 />
-                <button className='btn hidden' onClick={notify}>Notify!</button>
-                <ToastContainer
-                    progressStyle={{ 
-                        background: "#22c55e",
-                        backgroundImage: "none"  
-                    }}
-                />
+                
             </div>
         </div>
     );

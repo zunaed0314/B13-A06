@@ -2,7 +2,7 @@ import React from 'react';
 
 const GS = () => {
     return (
-        <div className='px-9 sm:px-13 md:px-17 lg:px-31 py-10 sm:py-16 md:py-20 bg-gray-100 flex flex-col justify-center items-center gap-3'>
+        <div className='px-5 sm:px-13 md:px-17 lg:px-20 py-10 sm:py-16 md:py-20 bg-gray-100 flex flex-col justify-center items-center gap-3'>
             <p className='text-2xl sm:text-3xl md:text-4xl text-gray-800 font-bold text-center'>Get Start in 3 Steps</p>
             <p className='text-base sm:text-lg md:text-xl text-gray-500 text-center'>Start using premium digital tools in minutes, not hours.</p>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-5 sm:mt-10'>

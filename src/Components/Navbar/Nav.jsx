@@ -3,7 +3,7 @@ import React from 'react';
 
 const Nav = ({ cartCount }) => {
     return (
-        <div className='px-9 sm:px-13 md:px-17 lg:px-31 py-4 flex justify-between items-center shadow-lg min-w-screen bg-white fixed z-20'>
+        <div className='px-1 sm:px-13 md:px-17 lg:px-20 py-4 flex justify-between items-center shadow-lg min-w-screen bg-white fixed z-20'>
             <div className="navbar-start flex  items-center gap-2 ">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden bg-purple-600 p-1">
@@ -23,7 +23,7 @@ const Nav = ({ cartCount }) => {
             </div>
             
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 text-gray-500 font-semibold text-sm md:text-base gap-0">
+                <ul className="menu menu-horizontal px-1 text-gray-500 font-semibold text-xs">
                     <li><a>Features</a></li>
                     <li><a>Pricing</a></li>
                     <li><a>Testimonials</a></li>
@@ -33,7 +33,7 @@ const Nav = ({ cartCount }) => {
             </div>
             
             <div className="navbar-end">
-                <div className='flex gap-[11px] sm:gap-4 justify-center items-center'>
+                <div className='flex gap-[5px] sm:gap-3 md:gap-2 justify-center items-center'>
                     <div className='relative flex items-center'>
                         <ShoppingCart color='black' className=' w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10' />
                         {cartCount > 0 && (

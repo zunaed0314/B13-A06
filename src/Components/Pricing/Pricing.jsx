@@ -3,7 +3,7 @@ import React from 'react';
 
 const Pricing = () => {
     return (
-        <div className=' px-9 sm:px-13 md:px-17 lg:px-31 flex flex-col gap-10 justify-center items-center my-8 sm:my-10 md:my-15'>
+        <div className=' px-5 sm:px-13 md:px-17 lg:px-20 flex flex-col gap-10 justify-center items-center my-8 sm:my-10 md:my-15'>
             <p className='text-2xl sm:text-3xl md:text-4xl text-gray-800 font-bold text-center'>Simple, Transparent Pricing</p>
             <p className='text-base sm:text-lg md:text-xl text-gray-600 text-center'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full relative'>

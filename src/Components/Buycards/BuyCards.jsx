@@ -35,7 +35,7 @@ const BuyCards = ({ addCard, removeFromCart, dataPromise, getCard, cartItems, cl
 
     return (
         <div>
-            <div className=' px-9 sm:px-13 md:px-17 lg:px-31 flex flex-col gap-4 justify-center items-center w-full  py-5 sm:py-8 md:py-10 lg:py-16 mt-8 sm:mt-10 md:mt-15'>
+            <div className=' px-5 sm:px-13 md:px-17 lg:px-20 flex flex-col gap-4 justify-center items-center w-full  py-5 sm:py-8 md:py-10 lg:py-16 mt-8 sm:mt-10 md:mt-15'>
                 <p className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-black font-bold text-center'>
                     Premium Digital Tools
                 </p>
@@ -74,8 +74,8 @@ const BuyCards = ({ addCard, removeFromCart, dataPromise, getCard, cartItems, cl
                     <p className='text-xl sm:text-2xl font-bold text-black mb-4'>Your Cart</p>
                     {allCards.length === 0 ? (
                         <div className='flex flex-col justify-center items-center'>
-                            <ShoppingCart color='gray' className=' w-7 sm:w-10 md:w-20 h-7 sm:h-10 md:h-20 mx-auto' />
-                            <p className='text-gray-500 text-center text-xl py-10'>Your cart is empty</p>
+                            <ShoppingCart color='gray' className=' w-10 sm:w-12 md:w-20 h-10 sm:h-12 md:h-20 mx-auto' />
+                            <p className='text-gray-500 text-center text-xl py-3'>Your cart is empty</p>
                         </div>
 
                     ) : (
