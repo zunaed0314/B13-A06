@@ -96,15 +96,20 @@ const BuyCards = ({ addCard, removeFromCart, dataPromise, getCard, cartItems, cl
                         </div>
                     </div>
 
-                    <button className='btn bg-purple-600 text-white rounded-full py-3 mt-2 hover:bg-purple-700' onClick={() => {
-                        clearCart()
-                        setAllCards([])
-                        setcartCount(0)
-                        toast.info("Cart cleared successfully!")
-                    }}>Proceed To Checkout</button>
+                    {
+                        allCards.length > 0 && (
+                            <button className='btn bg-purple-600 text-white rounded-full py-3 mt-2 hover:bg-purple-700' onClick={() => {
+                                clearCart()
+                                setAllCards([])
+                                setcartCount(0)
+                                toast.info("Cart cleared successfully!")
+                            }}>Proceed To Checkout</button>
+                        )
+                    }
+
                 </div>
             </div>
-            
+
         </div>
     );
 };
