@@ -16,7 +16,7 @@ const GS = () => {
                         Sign up for free in seconds. No credit card required to get started.
                     </p>
                     <div className='absolute flex justify-center items-center w-10 h-10 rounded-full bg-purple-600 font-bold top-5 right-5'>
-                        <p className='font-bold'>01</p>
+                        <p className='font-bold text-white'>01</p>
                     </div>
                     
                 </div>
@@ -30,7 +30,7 @@ const GS = () => {
                         Download and start using your premium tools immediately.
                     </p>
                     <div className='absolute flex justify-center items-center w-10 h-10 rounded-full bg-purple-600 font-bold top-5 right-5'>
-                        <p className='font-bold'>02</p>
+                        <p className='font-bold text-white'>02</p>
                     </div>
                 </div>
 
@@ -43,7 +43,7 @@ const GS = () => {
                         Browse our catalog and select the tools that fit your needs.
                     </p>
                     <div className='absolute flex justify-center items-center w-10 h-10 rounded-full bg-purple-600 font-bold top-5 right-5'>
-                        <p className='font-bold'>03</p>
+                        <p className='font-bold text-white'>03</p>
                     </div>
                 </div>
             </div>
