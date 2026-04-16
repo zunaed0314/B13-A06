@@ -10,20 +10,13 @@ const Cards = ({ product, addCard, removeFromCart, updateCardCount, cartItems })
         setBuy(isInCart);
     }, [cartItems]);
 
-    const handleBuy = (status) => {
-        if (status) {
+    const handleBuy = () => {
+        if (!buy) {
             addCard(product);
             updateCardCount(prevCount => prevCount + 1);
             setBuy(true);
             toast.success(`${product.name} added to cart!`, {
                 autoClose: 2500
-            });
-        } else {
-            removeFromCart(product.id);
-            updateCardCount(prevCount => prevCount - 1);
-            setBuy(false);
-            toast.error(`${product.name} removed from cart!`,{
-                autoClose:2500
             });
         }
     }
