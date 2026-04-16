@@ -19,7 +19,7 @@ const Hero = () => {
                     Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today.
                 </p>
                 <div className='relative flex flex-col sm:flex-row gap-3'>
-                    <button className="btn bg-purple-700 rounded-full text-sm sm:text-base md:text-lg lg:text-xl py-2 sm:py-3 md:py-4 hover:bg-white hover:text-black hover:border-2 hover:border-purple-700">
+                    <button className="btn bg-purple-700 rounded-full text-sm sm:text-white md:text-lg lg:text-xl py-2 sm:py-3 md:py-4 hover:bg-white hover:text-black hover:border-2 hover:border-purple-700">
                         Explore Products
                     </button>
                     <button className='btn rounded-full border border-purple-900 py-2 sm:py-3  md:py-4 bg-white text-purple-600 font-semibold hover:bg-white hover:text-black text-sm sm:text-base md:text-lg lg:text-xl flex gap-2'>
