@@ -23,7 +23,7 @@ const Nav = ({ cartCount }) => {
             </div>
             
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 text-gray-500 font-semibold text-xs">
+                <ul className="menu menu-horizontal px-1 text-gray-500 font-semibold text-sm">
                     <li><a>Features</a></li>
                     <li><a>Pricing</a></li>
                     <li><a>Testimonials</a></li>
