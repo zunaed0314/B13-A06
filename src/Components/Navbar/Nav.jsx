@@ -3,7 +3,7 @@ import React from 'react';
 
 const Nav = ({ cartCount }) => {
     return (
-        <div className='px-1 sm:px-13 md:px-17 lg:px-20 py-4 flex justify-between items-center shadow-lg min-w-screen bg-white fixed z-20'>
+        <div className='px-5 sm:px-13 md:px-17 lg:px-20 py-4 flex justify-between items-center shadow-lg min-w-screen bg-white fixed z-20'>
             <div className="navbar-start flex  items-center gap-2 ">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden bg-purple-600 p-1">

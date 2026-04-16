@@ -4,7 +4,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
     return (
-        <footer className="bg-[#0B1220] text-gray-300 px-4 sm:px-6 md:px-8 py-8 sm:py-10 md:py-12">
+        <footer className="bg-[#0B1220] text-gray-300 px-4 sm:px-6 md:px-25 py-8 sm:py-10 md:py-12">
             <div className="mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 gap-6 sm:gap-8">
                 <div className="sm:col-span-2 md:col-span-1 flex flex-col justify-center ">
                     <h3 className="text-white text-md sm:text-xl font-semibold mb-2">DigiTools</h3>

@@ -1,13 +1,10 @@
 import { Play } from 'lucide-react';
 import React from 'react';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 const Hero = () => {
 
-    const notify = () => toast("WOW SO EASY!")
     return (
-        <div className='px-5 sm:px-13 md:px-17 lg:px-20 grid grid-cols-1 lg:grid-cols-2 pt-30 lg:pt-35 pb-10 gap-5'>
+        <div className='px-5 sm:px-13 md:px-17 lg:px-20 grid grid-cols-1 lg:grid-cols-2 pt-30 lg:pt-25 pb-10 gap-5'>
             <div className='flex flex-col gap-4 justify-center items-center lg:items-start'>
                 <div className='bg-purple-200 gap-2 flex rounded-full px-3 py-1 w-fit'>
                     <img src="assets/group-5.png" className='w-5 h-5 sm:w-6 sm:h-6' alt="" />
@@ -22,9 +19,9 @@ const Hero = () => {
                     <button className="bg-purple-700 cursor-pointer shadow-md rounded-full text-sm text-white md:text-lg lg:text-xl py-2 sm:py-3 md:py-4 px-4 sm:px-6 font-bold hover:bg-white hover:text-black hover:border hover:border-purple-700">
                         Explore Products
                     </button>
-                    <button className='rounded-full cursor-pointer shadow-md border border-purple-900 py-2 sm:py-3 md:py-4 px-4 sm:px-6 bg-white text-purple-600 font-bold hover:bg-white hover:text-black text-sm sm:text-base md:text-lg lg:text-xl flex gap-2'>
-                        <Play color='purple' className='w-4 h-4 sm:w-5 sm:h-5' />
-                        Watch Demo
+                    <button className=' rounded-full cursor-pointer shadow-md border border-purple-900 py-2 sm:py-3 md:py-4 px-4 sm:px-6 bg-white text-purple-600 font-bold hover:bg-white hover:text-black text-sm sm:text-base md:text-lg lg:text-xl flex gap-2'>
+                        <Play color='purple' className='w-4 sm:w-8 h-4 sm:h-8 mx-auto my-auto' />
+                        <span>Watch Demo</span>
                     </button>
                 </div>
             </div>
